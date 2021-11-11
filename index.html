@@ -4,21 +4,400 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-   <title>Portfolio</title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link type="text/css" rel="stylesheet/less" href="/css/styles.less">
+   <link type="text/css" rel="stylesheet/less" href="/css/helper.less">
+   <link type="text/css" rel="stylesheet/less" href="/css/animations.less">
+
+   <script src="https://kit.fontawesome.com/e44a1984b0.js" crossorigin="anonymous"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+<script src="/js/app.js"></script>
+   <title>Long Story Short</title>
 </head>
 <body>
-   <h1 class="header">Long Story Short</h1>
+   <div class="header">
+      <h1>Long Story Short.</h1>
+   
+      <div class="header-content">   
+         <section class="header-content-body">
+            <h2>A Digital Museum of Ideologies <br> in Foreign and Local Literature</h2>
+            <p>Group 3</p>
+            <a href="#main"><i class="fas fa-chevron-down go-main"></i></a>
+         </section>
+      </div>
+   </div>
+   
+   <a name="main">
+      <div class="intro">
+         <p>Ideologies are the representations of the changing ideas, feelings, and values that individuals experience in their society. It is a set of principles that motivates and encourages the conduct of those who uphold it. These principles are often political or social that are often utilized as guides by society for change through a standardized thought process. Through this, Ideology became the foundation for the production, formation, and development of literature as it portrays the imaginary relation of individuals to the real and actual state of existence. And to further understand its concept, here are some literary pieces that demonstrate the evident influence of ideologies:</p>
+      </div>
+   
+      <div class="literary-piece lw">
+         <div class="content yellow-bg">
+            <div class="label">
+               <div class="number">1</div>
+               <h1>Little Women</h2>
+            
+               <div class="content-tabs">
+                  <button class="lw-tab-link std-btn" onclick="openTab(event, 'lw', 'tab-author')" name="defaultOpen">Author</button>
+                  <button class="lw-tab-link std-btn" onclick="openTab(event, 'lw', 'tab-background')">Background</button>
+                  <button class="lw-tab-link std-btn" onclick="openTab(event, 'lw', 'tab-summary')">Summary</button>
+                  <button class="lw-tab-link std-btn" onclick="openTab(event, 'lw', 'tab-role')">Role</button>
+                  <button class="lw-tab-link std-btn" onclick="openTab(event, 'lw', 'tab-why')">Why should we read this?</button>
+               </div>
+            </div>
+            
+            <div class="tab-contents">
 
-   <div class="content">
-      <div class="post left-align">
-         <img src="https://images.unsplash.com/photo-1530037327011-979a1109a5dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Image 1">
+               <div id="lw-tab-author" class="tab-content lw-content">
+                  <div class="author">
+                     <img src="/img//little-women/1.jpg" alt="">
+                     <div class="author-bio">
+                        <h2>Louisa May Alcott</h2>
+                        <p>
+                           Louisa May Alcott is an American novelist who was born on November 29, 1832. She was best known for her novel Little Women that was set in the Alcott family home, Orchard House in Concord, Massachusetts. With the help of her publisher, Thomas Niles, Little Women was then followed by more of her literary pieces that further reveal the development of the March sisters’ lives. These are Good Wives (1869), An Old-fashioned Girl (1870), Little Men (1871), Eight Cousins (1875), and its sequel Rose in Bloom (1876). Her other published works include A Modern Mephistopheles (1877), Under the Lilacs (1879), and Jack and Jill (1880).
+                        </p>
+                        <p>At present, Alcott’s writings still continue to appear on the bestseller list throughout the world as her literary creations introduced readers to a lot of colorful, educated, strong, and relatable female heroines that greatly influenced and impacted American literature.</p>
+                     </div>
+                  </div>
+               </div>
 
-         <div class="post-content">
-            <h2>yo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore eaque hic eveniet in rerum deleniti dolorum odio modi doloribus cumque?</p>
+               <div class="tab-content lw-content" id="lw-tab-background">
+                  <div class="background-context">
+                     <img src="/img/little-women/6.jpg" alt="">
+                     <div>
+                        <h2>Background Context</h2>
+                        <p>All through Louisa Alcott’s career, she was motivated because of money. She once said that “Money is the means and the ends of my mercenary existence.” She thought that little women would sell well, and that’s why she wrote it. Her father wasn’t financially supporting the family, which led her to write in order to for the things that they needed. Her father was a strong believer, and always insisted his beliefs onto his children. His ideology was based on the romanticised and spiritual idea of inherent goodness and perfection of human beings. Eventually, those beliefs of her father somehow end up getting written in the book. According to her father, Louisa was a problematic child and that she was a disappointment to her father. She was described as impatient and energetic. The author decided that she would not marry, but due to the demands from her publisher and fans, she made Jo—the main character of the story, marry at the end of the book.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content lw-content" id="lw-tab-summary">
+                  <div class="summary">
+                     <div class="caption">
+                        <img src="/img/little-women/11.jpg" alt="">
+                        <p class="yellow-accent">Screenshot from Little Women (1994)</p>
+                     </div>
+   
+                     <h2>Summary</h2>
+   
+                     <p class="indent">The story starts with the March sisters—Jo, Meg, Beth, and Amy. The sisters were in their living room on a Christmas eve morning, complaining about their poverty, and decided that they would buy themselves a gift. But they, later on, changed their mind and instead decided that they will buy their mother—Marmee, a present instead. Soon Marmee comes home with a letter from Mr. March—their father, who is serving as a Union chaplain in the Civil War. The letter from their father motivated the girls to endure their burdens more joyfully, more cheerful.</p>
+                     <p class="indent">On the actual morning of Christmas, the girls woke up with books under their pillows. Later on the same day, Marmee convinced and encouraged the girls to share or to give their breakfast to a poor family, the Hummels. Mr. Laurence is their elderly neighbor, he saw what the family did and decided to reward them by sending a feast over to their house.</p>
+                     <p class="indent">Time skip to the New Year’s party, where Jo and Meg were invited. During the party, Jo retracted and went to an alcove where she met Laurie, the grandson of Mr. Laurence. When Jo and Laurie were having a moment of introduction, Meg sprained her ankles while dancing. Laurie escorted the sisters back home.</p>
+                     <p class="indent">When Laurie was sick, Jo visited him. Which ended up with her insulting a painting of Mr. Laurence, right in front of the man himself. Good thing Mr. Laurence likes Jo’s punky-ness and ends up being friends. Later on, Mr. Laurence meets all the sisters. Beth became his favorite because she reminds him of his late granddaughter. He gives Beth his deceased granddaughter’s piano.</p>
+                     <p class="indent">The girls have various adventures. Amy was trading limes at school and got caught, the teachers ended up hitting her as a punishment which resulted in Mrs. March withdrawing her daughter from school. Jo was going to the theatre and didn’t let Amy go with her. As an act of revenge, Amy burns Jo’s manuscripts, and obviously, Jo got mad and nearly lets her sister drown in the frozen lake. While all of that was going on, Meg was attending a party for her friend, Annie Moffat. After allowing the girls to dress her up, she learned that appearances weren't everything. And since this was somewhat of a high-class party, Laurie was invited. And seeing Meg and Laurie talk also got the people talking and saying that Meg is going to marry Laurie for his money.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content lw-content" id="lw-tab-role">
+                  <div class="role">
+                     <img class="center" src="/img/little-women/5.jpg" alt="">
+   
+                     <h2>The Role of its Genre to Impose Social Impact</h2>
+   
+                     <p class="indent">Little Women is a timeless realism story that captures the struggles of women in their familial duty, personal growth, and society’s gender stereotyping. Even if the story was set in the 1860s, there are little nuggets of wisdom and life lessons readers can reap from it as these pieces of knowledge are relevant in today’s society wherein one faces conundrums and is forced to make difficult life decisions.</p>
+                     <p class="indent">The novel’s realism genre highlights the different kinds of ways women make for their voices to be heard and the nuances they face in their personal lives and society. It questions the validity of gender stereotypes to both males and females and the danger of typical gender expectations to one’s individual growth.</p>
+                     <p class="indent">Alcott’s work opens society’s eyes to the injustices and inequalities placed upon humanities’ genders. It also challenges the idea that being an ideal woman is the only acceptable female lifestyle and a man’s interests should stay away from girls’ hobbies like painting. Through this genre, Alcott breaks the traditional gender stereotypes, motivating her readers not to label themselves or others simply based on gender and for them to see each other as equals.</p>
+                     <p class="indent">Little Women has an incredibly widespread influence and impact particularly on women writers. As the most exuberant and ambitious character in the novel, Jo March, who is an aspiring author and independent soul, like Louisa Alcott, has touched many who have admired her challenges to societal norms while embracing its virtues with her nascent feminism. This is evident as Jo has fed the ambitions of many well-known writers as diverse as Gloria Steinem, Helen Keller, Hillary Rodham Clinton, Gertrude Stein, Danielle Steel, Simone de Beauvoir, J.K. Rowling, and national Poet Laureate Tracy K. Smith.</p>
+                     <p class="indent">That year, the sisters formed the Pickwick Club to write a family newspaper. Later on, Jo decided to sneak in on Laurie and convince her sisters to let him join in as well. After joining he introduced the idea of a post-box. At the beginning of June, everyone got lazy which resulted in the sisters deciding to neglect their housework. Even Marmee decided to take a day off at the end of the week. The girls ended up spoiling dinner but everything was fine because everyone ended up laughing over it. One day, Laurie had his English friends over, and the Marches decided to go on a picnic with them. Later on, One of Jo’s stories got published for the very first time.</p>
+                     <p class="indent">One day, they received a telegram. Saying that Mr. March was sick and was in the hospital in Washington, D.C. Marmee decided to go to Mr. March to help aid him. And Jo cut and sold her hair to help finance her mother’s trip to her father. After Marmee left, chaos was awakened, for the girls have decided to once again neglect their chores. Except for Beth. Beth decided to visit the Hummel and later came back with the scarlet fever that she got from one of the Hummel babies. Beth holds on for dear life until Marmee returns home. On the other hand, Amy stayed with Aunt March in order to not get the disease as well. Beth recovered but not completely. While that was happening, Mr. Brooke—Laurie’s tutor, fell in love with Meg. And the feelings were mutual, which ended with them getting engaged.</p>
+                     <p class="indent">Time skip to three years later, where part two begins. Mr. March is now home from the war and Laurie is almost done with school. Later on, Meg and Mr. Brooke got married and moved in together in a new house. One day, Amy decided to host a lunch with her art school friends but the bad weather said otherwise and ruined the festivities. Jo finally got a novel published but she had to cut it down a bit in order to please her publishers. While all that was happening, Meg was having trouble with keeping the house in shape. Mostly because she was pregnant and later on gave birth to two beautiful twin babies. Their names were Demi and Daisy. Amy went to Paris instead of Jo, because Aunt Carrol was more fond of Amy as her companion for her ladylike behaviour.</p>
+                     <p class="indent">Jo starts to suspect that Beth has feelings for Laurie. And in order to avoid Laurie’s affection for her, she decided to move to New York where she meets Professor Bhaer, a German language instructor who is also poor. Professor Bhaer suggested that Jo should stop writing sensationalist stories. Jo took his advice and found a simpler writing style. Beth got really sick, and so Jo decided to go back home, in which to her surprise Laurie ended proposing to her. It ends up with her turning him down. And then Beth soon dies. Everyone mourned her death.</p>
+                     <p class="indent">Amy and Laurie reunited in France, which leads them to falling in love. They got married and returned home. Jo starts to hope that Professor Bhaer will come to her. And of course he does, and they got married one year later.</p>
+                     <p class="indent">The novel ends with the whole family gathered together, all happy and thankful for the blessings and each other, mainly the sisters.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content lw-content" id="lw-tab-why">
+                  <div class="why">
+                     <img class="center" src="/img/little-women/8.jpg" alt="">
+   
+                     <h2>Why should we read this literary piece?</h2>
+   
+                     <p class="indent">Little Women is worth reading as it stays pertinent and can impact and influence readers in numerous ways as they age or as society changes around them. Its moral lessons transverse time as its story is about family, love, sibling relationships, forgiveness, triumph, heartaches, and living a life of beautiful and tranquil contentment. It has themes that every generation can relate to as it contains all the dramas life has to offer for most individuals to experience. Thus, the novel has a tinge of engaging sweetness that appeals to many, making it very suitable for readers of all genders and ages.</p>
+                     <p class="indent">Alcott’s literary work touches the deep issues of reality and captures the depth and reflection of feminine thought of her time. Making it a very charming story with a truthful and canonical account of human characters and relationships. Little Women also resonates so well with girls and women as it embraces all different kinds of women there is --- the vain, the beautiful, the kind, the angry --- and treats them with the same love, respect, and affection they deserve; emphasizing how women come in all different shapes, sizes, and mindsets.</p>
+                     <p class="indent">Little Women is a must-read novel as it encourages how women are not conquests, and not just potential wives and mothers, as they are also fellow human beings with wants, dreams, and insights in life.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="literary-piece pr">
+         <div class="content blue-bg">
+            <div class="label">
+               <div class="number">2</div>
+               <h1>Pride and Prejudice</h2>
+            
+               <div class="content-tabs">
+                  <button class="pr-tab-link std-btn" onclick="openTab(event, 'pr', 'tab-author')" name="defaultOpen">Author</button>
+                  <button class="pr-tab-link std-btn" onclick="openTab(event, 'pr', 'tab-background')">Background</button>
+                  <button class="pr-tab-link std-btn" onclick="openTab(event, 'pr', 'tab-summary')">Summary</button>
+                  <button class="pr-tab-link std-btn" onclick="openTab(event, 'pr', 'tab-role')">Role</button>
+                  <button class="pr-tab-link std-btn" onclick="openTab(event, 'pr', 'tab-why')">Why should we read this?</button>
+               </div>
+            </div>
+            
+            <div class="tab-contents">
+
+               <div id="pr-tab-author" class="tab-content pr-content">
+                  <div class="author">
+                     <img src="/img/pride-and-prejudice/3.jpeg" alt="">
+                     <div class="author-bio">
+                        <h2>Jane Austen</h2>
+                        <p class="indent">Jane Austen, the internationally acclaimed English novelist born on December 16, 1775, in Steventon, Hampshire, England. She is the first author to give literature a distinctively modern character by depicting average individuals' daily events. She published six novels namely: Sense and Sensibility (1811), Pride and Prejudice (1813), Mansfield Park (1814), Emma (1815) Persuasion (1817), and Northanger Abbey (1817)</p>
+                        <p class="indent">Despite the fact that Austen only published six novels during her lifetime, she manages to have legions of supporters throughout the world. Her timeless stories have been adapted into a myriad of films, television series, and modernized adaptations, along with being transcribed into various languages to transcend cultural barriers. Today, she is as renowned as always and is respected as highly as any influential writer in the history of English literature.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content pr-content" id="pr-tab-background">
+                  <div class="background-context">
+                     <img src="/img/pride-and-prejudice/1.jpg" alt="">
+                     <div>
+                        <h2>Background Context</h2>
+                        <p class="indent">Jane Austen was born during the Georgian era which is when Pride and Prejudice was written. With Britain's ongoing battle abroad, it was an era of change. It was at the start of the Industrial Revolution that the arts and letters shifted to a romantic age. It is also the time when Western Europe began to hear the first murmurs of feminist and abolitionist concerns. Austen's realistic work, which is frequently set in the Regency period, allows readers to experience the lives of her fictional characters. Furthermore, the work blurs the lines between Romantic and Victorian literature, since the characters are conscious of modernity and city life, as well as the ramifications for family structure and individual characteristics.</p>
+                        <p class="indent">To summarize, Jane Austen, like many other authors, wrote about the society she lived in: the complex world of the aristocracy and rising middle class in England during her lifetime. Many of the characters and situations in Pride and Prejudice were inspired by events in the author's life.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content pr-content" id="pr-tab-summary">
+                  <div class="summary">
+                     <div class="caption">
+                        <img src="/img/pride-and-prejudice/2.jpg" alt="" class="std-height">
+                        <p class="yellow-accent">Pride & Prejudice (2005) Movie Poster</p>
+                     </div>
+   
+                     <h2>Summary</h2>
+
+                     <p class="indent">At the beginning of the novel, Mr. Bingley and his sisters, as well as their dear friend Mr. Darcy, relocate into the most sumptuous Netherfield Park mansion in the vicinity at the start of the novel. Mr. Bingley is a wealthy and unmarried young man. It appears to be the ideal solution for the Bennet family, who have five unmarried daughters and are determined in getting them married in order to protect their family's financial future. Jane Bennet, the eldest of the five girls, is requested to supper one day, but she falls sick shortly after arriving. Elizabeth, the second oldest, arrives at Netherfield to watch over her older sister. This is when the two couples, Jane and Mr. Bingley, Elizabeth and Mr. Darcy met at this event and later on developed a liking for each other. The next day,  Mr. Bingley and his sisters make a trip to Bennet's residence to ask them to a ball that they will have at the mansion.</p>
+                     <p class="indent">Simultaneously, Mr. Collins, Mr. Bennet's cousin and sole inheritor to their family property being no male successors to the Bennet family comes to see the family. Prior to actually announcing his arrival, he sent a note in which he stated his desire to marry one of the Bennet girls. He foolishly anticipates all of them to want to marry him in order to retain their beautiful home and is stunned when Elizabeth declines his proposal during the ball. Despite that, William Collins, desperate to get himself a spouse, offers to marry Elizabeth Bennet's dear friend and neighbor, Charlotte Lucas, who accepts the proposal solely out of social pressure./p>
+                     <p class="indent">The Bingley sisters were anxious that their brother, Mr. Bingley, would humiliate the entire family by getting married to Jane Bennet, who was not within their social standing. They do anything they can to break the pair and eventually force him to relocate to London. Jane and Elizabeth Bennet travel to London after a while. Elizabeth encounters Mr. Darcy afterward whilst meeting her friend Charlotte. They re-engage in serious exchanges. Darcy admits his feelings for Elizabeth and proposes to her, but he does so in a very haughty approach that Elizabeth declines the proposal. His deed, however, altered her perception of him, and her disdain for him evolved into something more sophisticated and profound. The following morning, Mr. Darcy sends a heartfelt letter to Elizabeth in which he comes transparent, truly explains why he intervened in Jane and Mr. Bingley's relationship, which he genuinely regrets, and reveals that Mr. Wickham's claims about him are untrue. Elizabeth changes her mind about Darcy, but she doesn't make contact with him to notify him. The next opportunity Elizabeth and Mr. Darcy encounter each other is after Elizabeth journeys with her aunt and uncle to Darcy's Pemberley manor. She overhears others praising him, and Mr. Darcy personally presents himself admirably in public. One day, Mr. Darcy comes across Elizabeth in despair after learning that her younger sister Lydia had taken off running with officer Wickham. Fortunately for everyone, uncle Gardiner was able to locate the couple in London and simply persuade the young guy to marry the girl he had captivated. Only later did Elizabeth know Wickham accepted marrying Lydia after Mr. Darcy had cleared off all of his liabilities.</p>
+                     <p class="indent">The narrative concludes happily as Mr. Bingley, the sisters, and Mr. Darcy return to Netherfield Park. Darcy proposes to Elizabeth again for the second time, and she approves, and they settle into the magnificent Pemberley House. Mr. Bingley married Jane, and the pair have lived happily together ever since.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content pr-content" id="pr-tab-role">
+                  <div class="role">
+                     <img class="center" src="/img/pride-and-prejudice/8.jpg" alt="">
+   
+                     <h2>The Role of its Genre to Impose Social Impact</h2>
+                     
+                     <p class="indent">Austen's Pride and Prejudice offers a fresh perspective on family dynamics, employing social realism to reinterpret masculinity. Austen's literature, notably Pride and Prejudice, has remained popular in both scholarly and popular circles due to her portrayal of complex narrative problems within the home setting of nineteenth-century England.</p>
+                     <p class="indent">In Pride and Prejudice, gender is a major theme. The novel is set in a time when gender roles were highly fixed, and men and women had very different options and perspectives. For female characters like Charlotte Lucas and the Bennet sisters, marriage is a serious issue since it is the only option for them to acquire economic security and independence. They would not have been able to work for a living or live freely as upper-class women.</p>
+                     <p class="indent">The role and expectations of women in the 18th and 19th centuries are both reflected and questioned in Jane Austen's works. Pride and Prejudice demonstrates how Austen utilized her works to portray the society in which she lived, notably how that culture imposed a feeling of obligation on women in terms of family, education, and marriage. Austen challenges gender preconceptions and inequities, encouraging her readers to view each other as equals through this genre.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content pr-content" id="pr-tab-why">
+                  <div class="why">
+                     <img class="center" src="/img/pride-and-prejudice/7.jpg" alt="">
+   
+                     <h2>Why should we read this literary piece?</h2>
+                     
+                     <p class="indent">Irony, cruel humor, and mockery prevail throughout Austen's clever and erudite writing. Despite being so unromantic, the narrative is viewed as a love story. Unlike many other romances, "Pride and Prejudice" is more than just a love story; we are taken on a journey to discover Elizabeth Bennett, the main character. One of the most compelling reasons to read "Pride and Prejudice" is to understand more about Elizabeth's character. We learn about the reality a woman must face and the stereotypes she is continuously confronted with through Elizabeth's character. We are constantly confronted with problems that we must overcome.</p>
+                     <p class="indent">Jane Austen's Pride and Prejudice is a timeless novel that appeals to readers of all ages. Despite being so unromantic, the narrative is viewed as a love story. In her feminine perspective, love is a sardonic subject instead of an emotional one. Her characters are either delightfully repulsive or frighteningly charming, with no in-between. By making Elizabeth Bennet so endearing, Austen mocks her audience for falling in love with the attractive protagonist. Austen takes pride and prejudice and turns them into a battlefield full of humiliation and comedy. The last reason to admire this classic is that it has the most passionate love proposal, regardless of what has been mentioned previously about the narrative being concerned about money.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="literary-piece st">
+         <div class="content stella-bg">
+            <div class="label">
+               <div class="number">3</div>
+               <h1>100 Tula Para Kay Stella</h2>
+            
+               <div class="content-tabs">
+                  <button class="st-tab-link blue-btn" onclick="openTab(event, 'st', 'tab-author')" name="defaultOpen">Author</button>
+                  <button class="st-tab-link blue-btn" onclick="openTab(event, 'st', 'tab-background')">Background</button>
+                  <button class="st-tab-link blue-btn" onclick="openTab(event, 'st', 'tab-summary')">Summary</button>
+                  <button class="st-tab-link blue-btn" onclick="openTab(event, 'st', 'tab-role')">Role</button>
+                  <button class="st-tab-link blue-btn" onclick="openTab(event, 'st', 'tab-why')">Why should we read this?</button>
+               </div>
+            </div>
+            
+            <div class="tab-contents">
+
+               <div id="st-tab-author" class="tab-content st-content">
+                  <div class="author">
+                     <img src="/img/stella/1.jpg" alt="">
+                     <div class="author-bio">
+                        <h2>Jason Paul Laxamana</h2>
+                        <p class="indent">Jason Paul Laxamana is a writer and filmmaker who is known for "Nakakabuang (2014), 2 Cool to Be 4gotten (2016), and The Spider's Lair (2013)." With his recent film, "100 Tula Para Kay Stella," starring Bella Padilla as Stella and JC Santos as Fidel, he has re-established himself in the industry. Jason Paul Calma Laxamana's real name is Jason Paul Calma Laxamana, and he was born in the year 1987 in Paraoc, Pampanga. He enrolled in the University of the Philippines Diliman's BA Broadcast Communication degree program. He was also nominated for the Gawad Urian Award for Best Director during his career as a director.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content st-content" id="st-tab-background">
+                  <div class="background-context">
+                     <img src="/img/stella/2.jpg" alt="">
+                     <div>
+                        <h2>Background Context</h2>
+
+                        <p class="indent">100 Tula para kay Stella is about a stuttering student making 100 poems to win a rockstar’s heart. It is surprising, nonconforming, and as current as of today's Millenials, yet it also resonates to xennials and gen x'ers, as the traditional topic of unrequited love is ageless. It hits viewers with a gloomy coming-of-age movie with bits of humor breaks like any other love story.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content st-content" id="st-tab-summary">
+                  <div class="summary">
+                     <div class="caption">
+                        <img src="/img/stella/3.jpg" alt="" class="std-height">
+                        <p class="blue-accent">Screenshot from 100 Tula Para Kay Stella (2017)</p>
+                     </div>
+   
+                     <h2>Summary</h2>
+                     
+                     <p class="indent">In 2004, Stella Puno and Fidel Lansangan met in college as freshmen psychology majors. Despite the difference in their personalities, they found a way to be friends. Fidel is an honor student with a speech impediment who enjoys poetry, whereas Stella is a rocker with a tough and self-assured demeanor who would rather jam with her band than study.</p>
+                     <p class="indent">Fidel begins to write poetry for Stella to show his love, but he lacks the guts to read them to her. Stella, on the other hand, has had a number of boyfriends as she works toward her ambition of landing a recording contract.</p>
+                     <p class="indent">The story follows Fidel and Stella through four years of college and revolves around the question of whether Fidel has what it takes.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content st-content" id="st-tab-role">
+                  <div class="role">
+                     <img class="center" src="/img/stella/4.png" alt="">
+   
+                     <h2>The Role of its Genre to Impose Social Impact</h2>
+                  
+                     <p class="indent">100 Tula Para Kay Stella falls under the romance genre. Fidel, a hardworking student who has a speech impediment has committed to creating a total of 100 poems for his love interest, Stella.</p>
+                     <p class="indent">Romance novels tend to have a significant lesson within the main storyline. For this novel, it is clear to see that people are willing to go through lengths for the person they adore. Fidel demonstrated this by creating a great number of poems for Stella, while not being able to express it directly through speaking. He was able to profess his true feelings for her in ways that he could.</p>
+                     <p class="indent">Novels in this genre are significant nowadays because it teaches people how to deal with their feelings. It demonstrates how romantic relationships begin and evolve through time, while also teaching readers how to manage their emotions.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content st-content" id="st-tab-why">
+                  <div class="why">
+                     <img class="center" src="/img/stella/5.jpg" alt="">
+   
+                     <h2>Why should we read this literary piece?</h2>
+      
+                     <p class="indent">There are multiple reasons why people read Romantic novels, but mainly because they are able to experience love through the author’s work.</p>
+                     <p class="indent">It allows you to glimpse into a relationship and essentially live through the characters' experiences, something you can't obtain anywhere else. Romance novels are great because they don't need a lot of thought or effort to appreciate the author’s perspective of love and relationships.</p>
+                     <p class="indent">Novels in this genre may be a source of consolation for some individuals since they provide hope for two seemingly unrelated people falling in love at the end of the novel.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="literary-piece ab">
+         <div class="content ab-bg">
+            <div class="label">
+               <div class="number">4</div>
+               <h1>ABNKKBSNPLAko?!</h2>
+            
+               <div class="content-tabs">
+                  <button class="ab-tab-link std-btn" onclick="openTab(event, 'ab', 'tab-author')" name="defaultOpen">Author</button>
+                  <button class="ab-tab-link std-btn" onclick="openTab(event, 'ab', 'tab-background')">Background</button>
+                  <button class="ab-tab-link std-btn" onclick="openTab(event, 'ab', 'tab-summary')">Summary</button>
+                  <button class="ab-tab-link std-btn" onclick="openTab(event, 'ab', 'tab-role')">Role</button>
+                  <button class="ab-tab-link std-btn" onclick="openTab(event, 'ab', 'tab-why')">Why should we read this?</button>
+               </div>
+            </div>
+            
+            <div class="tab-contents">
+
+               <div id="ab-tab-author" class="tab-content ab-content">
+                  <div class="author">
+                     <img src="/img/ab/1.png" alt="">
+                     <div class="author-bio">
+                        <h2>Bob Ong</h2>
+                        <p class="indent">Roberto "Bob" Ong is a contemporary Filipino author who was born in Quezon City in February 1975. His pen name is "Bob Ong," and he is noted for his conversational writing style, which he uses to produce amusing and introspective representations of Philippine society.</p>
+                        <p class="indent">His real name and identity have remained unknown to the majority of his followers and the Filipino community in the sixteen years after his first book was published. He mentioned in a Philstar question and answer section that he intended to follow the philosophy of not embracing celebrity and that his novels properly reflect who he is as a person.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content ab-content" id="ab-tab-background">
+                  <div class="background-context">
+                     <img src="/img/ab/2.jpg" alt="">
+                     <div>
+                        <h2>Background Context</h2>
+
+                        <p class="indent">ABNKKBSNPLAKo?! is an autobiography that chronicles author Bob Ong's school years, from his first day of primary school to his dismal university experience, and finally to his admission into the education sector as a teacher.</p>
+                        <p class="indent">The book is written in Tagalog, the Philippine language. The full title of the autobiography is meant to be read phonetically as "Aba, nakakabasa na pala ako?!!" which translates to "Wow, I can truly read now?! ”</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-content ab-content" id="ab-tab-summary">
+                  <div class="summary">
+                     <div class="caption">
+                        <img src="/img/ab/3.jpg" alt="" class="std-height">
+                        <p class="yellow-accent">Screenshot from ABNKKBSNPLAko?! (2014)</p>
+                     </div>
+   
+                     <h2>Summary</h2>
+                     
+                     <p class="indent">ABNKKBSNPLAKo?! is told through a series of funny vignettes set at four various points in his life: elementary school, high school, university, and his professional working life. Ong was exposed to a chaotic Filipino public school when he was five years old, and he was afraid of a terrifying, witch-like first primary teacher who had a history of physically assaulting misbehaving children.</p>
+                     <p class="indent">As Ong gets older, his educational issues become more serious. He skips school to go to the movies at the neighborhood movie theater. He faces the customary teenage affliction of acne, dotes on a lovely girl he refers to as "Special Someone," and tackles his perennial opponent, math class, all while making fun of Filipino cultural standards and Philippines' severely underfunded public school system.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content ab-content" id="ab-tab-role">
+                  <div class="role">
+                     <img class="center" src="/img/ab/4.jpg" alt="">
+   
+                     <h2>The Role of its Genre to Impose Social Impact</h2>
+                     
+                     <p class="indent">The literary text “ABNKKBSNPLAKo?!” belongs to the comedy genre and is also an autobiography. The story talks about the author Bob Ong and his life experiences during his primary years till his adult working life.</p>
+                     <p class="indent">Comedy may be the genre of the story but its true purpose is meant to point out education. Teachers lashing out at students and the main character skipping classes during his primary years, his habit follows him as he grows older, it resulted in him struggling and failing at the university he was studying for his future.</p>
+                     <p class="indent">The story has a social impact as it can represent how the country’s educational system affects its students. Being able to see flaws paves way for improvement. In the end, the book wanted substantive changes as it shows the author’s perspective on education when he was studying.</p>
+                  </div>
+               </div>
+
+               <div class="tab-content ab-content" id="ab-tab-why">
+                  <div class="why">
+                     <img class="center" src="/img/ab/5.jfif" alt="">
+   
+                     <h2>Why should we read this literary piece?</h2>
+                     
+                     <p class="indent">Bob Ong is, in my opinion, a truly remarkable contemporary writer who will be remembered by both young and old. You should read this literary essay because I believe that every letter, word, page, chapter, and book he has released accurately depicts reality. Furthermore, his implicit portrayal of events and topics has contributed to the intrigue and entertainment value of his writings.</p>
+                     <p class="indent"> In addition, I believe that his literary works have left an indelible stamp on our literature and history, serving as a constant reminder of the cultures and traditions that define who we are as Filipinos. If Bob Ong decides to remain anonymous, we will remember him not just as a modern writer, but also as a Phantom of Filipino Literature, since, as the saying goes, "good novels don't give up all their secrets at once."</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </a>
+
+   <div class="footer">
+      <div class="footer-content">
+         <h1>Credits</h1>
+         <div class="credits">
+            <div class="credit">
+               <h3>Group Members</h3>
+               <div class="members-list">
+                  <ul>
+                     <li>Andrei Titong</li>
+                     <li>Beina Quintan</li>
+                     <li>Chelsi Bana</li>
+                     <li>Curt Reyes</li>
+                  </ul>
+                  <ul>
+                     <li>Hans Dave</li>
+                     <li>Jeri Alannah Juralbal</li>
+                     <li>John Seifer Albacete</li>
+                     <li>Naya Peralta</li>
+                     <li>Nelson Mabini Jr.</li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <h3>Bibliography</h3>
+               <p>View bibliography on <a href="https://github.com/SyferDev/long-story-short/tree/master#readme">GitHub</a></p>
+            </div>
          </div>
       </div>
    </div>
+   
+   <script src="/js/defaultOpen.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

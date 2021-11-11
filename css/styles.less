@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:wght@400;700&display=swap");
+
+:root {
+   --background: #faf8f5;
+   --font-color: #111013;
+   --blue: #333e63;
+   --maroon: rgb(65, 49, 49);
+
+   --header-img: url(https://images.unsplash.com/photo-1576769562804-455efad26b4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80);
+   --header-accent: #554109;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   color: var(--font-color);
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   background-color: var(--background);
+   line-height: 1.4em;
+   margin: 0;
+
+   .go-main {
+      font-size: 2rem;
+      transition: all 100ms ease;
+      color: var(--header-accent);
+
+      &:hover {
+         cursor: pointer;
+         transform: translateY(-5px) scale(1.2);
+      }
+   }
+}
+
+h1,
+h2 {
+   font-family: "PT Sans", sans-serif;
+   font-weight: bold;
+}
+
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   color: var(--background);
+   padding: 3em;
+   background-image: var(--header-img);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   height: 50vh;
+
+   h1 {
+      margin: 0;
+      align-self: flex-start;
+      margin-bottom: 4rem;
+      color: var(--background);
+      transition: all 100ms ease;
+
+      cursor: pointer;
+
+      &:hover {
+         color: var(--header-accent);
+         font-size: 2.2rem;
+      }
+   }
+
+   h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+   }
+}
+
+.header-content {
+   margin-top: auto;
+   display: flex;
+   height: fit-content;
+   flex-direction: row;
+}
+
+.header-number {
+   position: relative;
+   top: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   width: 4vw;
+   height: 4vw;
+   font-size: 2rem;
+   font-family: "PT Sans";
+   font-weight: bold;
+}
+
+.header-content-body {
+   text-align: center;
+   width: 70vw;
+   align-self: center;
+   justify-self: center;
+   padding: 3rem;
+
+   h2 {
+      margin-bottom: 0;
+   }
+
+   p {
+      font-weight: bold;
+      font-size: 1.2rem;
+
+      &::before {
+         content: "by ";
+      }
+   }
+}
+
+.intro {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7rem;
+   margin-bottom: 7rem;
+   width: 40vw;
+   font-size: 1.3rem;
+   line-height: 2.5rem;
+
+   p:first-child:first-letter {
+      float: left;
+      font-size: 5rem;
+      line-height: 3rem;
+      padding-top: 0.8rem;
+      padding-right: 10px;
+   }
+}
+
+.literary-piece {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 10rem;
+}
+
+.tab-content {
+   animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.content {
+   width: 70vw;
+   margin: auto;
+   padding: 5rem;
+   display: flex;
+   flex-direction: column;
+   transition: max-height 0.1s ease;
+
+   h1 {
+      margin-bottom: 2rem;
+   }
+   p {
+      font-size: 1.1rem;
+      line-height: 2rem;
+   }
+
+   .tab-contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+   }
+
+   .label {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+      align-items: center;
+
+      .number {
+         background-color: var(--background);
+         width: 4rem;
+         height: 4rem;
+         font-size: 2.5rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-right: 20px;
+      }
+
+      .content-tabs {
+         margin: 0;
+         padding: 0;
+         margin-left: auto;
+         button {
+            align-self: center;
+            margin: 0;
+            padding: 0;
+            border: none;
+            margin-left: 20px;
+            background-color: transparent;
+            font-family: "PT Sans";
+            transition: all 0.1s ease;
+            font-size: 1.2rem;
+         }
+      }
+
+      h1 {
+         font-size: 3rem;
+         margin: 0;
+         color: black;
+      }
+   }
+
+   .author {
+      display: flex;
+
+      img {
+         height: 40vh;
+         margin-right: 3rem;
+      }
+   }
+
+   .background-context {
+      display: flex;
+      flex-direction: row-reverse;
+
+      img {
+         height: 40vh;
+         margin-left: 3rem;
+      }
+   }
+
+   .why,
+   .role {
+      img {
+         height: 50vh;
+         margin-bottom: 3rem;
+      }
+   }
+}
+
+.footer {
+   background-color: #111013;
+   margin: 0;
+   padding: 3rem 10rem;
+   color: #faf8f5;
+
+   * {
+      margin: 0;
+      padding: 0;
+   }
+
+   h1 {
+      margin-bottom: 10px;
+   }
+
+   ul {
+      padding-left: 2rem;
+      list-style-type: none;
+      overflow: hidden;
+   }
+
+   li {
+      margin-top: 10px;
+   }
+
+   .footer-content {
+      display: block;
+      margin: auto;
+      width: 60%;
+   }
+
+   .credits {
+      display: flex;
+   }
+
+   .credit {
+      margin-right: 5rem;
+   }
+
+   .members-list {
+      display: flex;
+   }
+}
+
+.lw {
+   background-image: url(/img/little-women/bg.jpg);
+}
+
+.pr {
+   background-image: url(/img/pride-and-prejudice/bg.jpg);
+}
+
+.st {
+   background-image: url(/img/stella/bg.jpg);
+   background-position: center;
+}
+
+.ab {
+   background-image: url(/img/ab/bg.jpg);
+}
+
+.center {
+   display: block;
+   margin: auto;
+}
+
+.caption {
+   img,
+   p {
+      .center();
+   }
+   p {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+}
+
+.indent {
+   text-indent: 3rem;
+}
+
+.std-height {
+   height: 60vh;
+}
+
+.std-btn {
+   color: #867c40;
+
+   &:hover,
+   &.active {
+      color: #4b4523;
+   }
+}
+
+.blue-btn {
+   color: #56607c;
+
+   &:hover,
+   &.active {
+      color: #202841;
+   }
+}
